@@ -33,7 +33,7 @@ export default function Header() {
 
             <div className="z-10 bg-white flex rounded-full p-9 justify-between items-center">
                 {/* left */}
-                <ul className="bg-transparent inline-flex ">
+                <ul className="bg-white inline-flex ">
                         <li className="relative inline-flex items-center p-3 text-sm font-medium text-center text-black bg-transparent">
                             <a href="#" className="flex space-x-2">
                                 <p>تومان</p>
