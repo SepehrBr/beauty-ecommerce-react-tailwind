@@ -1,7 +1,7 @@
 export default function Header() {
 
     return (
-        <header className="bg-transparent shadow-md">
+        <header className="bg-transparent relative mb-10">
             <div className="bg-transparent w-full flex justify-between p-10 rounded">
                 <ul className="bg-transparent inline-flex">
                     <li className="bg-transparent font-bold text-black p-2"><a href="#">فروشگاه</a></li>
@@ -31,16 +31,16 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="z-10 bg-white flex rounded-full p-9 justify-between items-center">
+            <div className="relative bg-white px-8 rounded-full py-3 mx-5 flex justify-between items-center shadow-lg">
                 {/* left */}
-                <ul className="bg-white inline-flex ">
+                <ul className="bg-white flex w-full">
                         <li className="relative inline-flex items-center p-3 text-sm font-medium text-center text-black bg-transparent">
                             <a href="#" className="flex space-x-2">
                                 <p>تومان</p>
                                 <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
                                 </svg>
-                                <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-200 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">0</div>
+                                <div className="absolute flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-orange-300 border-2 border-white rounded-full top-0 right-0">0</div>
                             </a>
                         </li>
                         <li className="bg-transparent text-black p-2">|</li>
@@ -70,10 +70,16 @@ export default function Header() {
                 </ul>
 
                 {/* center */}
-                <div className="bg-gray-200 rounded-full p-10"><img src="https://demo.i-wp.ir/woodland/cosmetic/wp-content/uploads/2022/01/logo-cosmetic.png" alt="" /></div>
+                <div className="flex justify-center items-center">
+                    <div className="absolute rounded-full bg-white w-64 h-64 flex justify-center items-center  shadow-[0_20px_20px_-15px_rgba(0,0,0,0.3)]">
+                        <img
+                            className=" bg-gray-100 rounded-full w-56 h-56 object-scale-down"
+                            src="https://demo.i-wp.ir/woodland/cosmetic/wp-content/uploads/2022/01/logo-cosmetic.png"/>
+                    </div>
+                </div>
 
                 {/* right */}
-                <ul className="flex">
+                <ul className="flex w-full justify-end">
                     <li className="bg-transparent font-bold text-black p-2">
                         <a className="flex space-x-2">
                             <p className="font-bold text-black">021-77023</p>
@@ -94,8 +100,8 @@ export default function Header() {
                 </ul>
             </div>
 
-            <div className="z-3  bg-rose-300 place-self-center w-10/12 rounded-bl-full rounded-br-full flex justify-between text-white">
-                <ul className="bg-transparent inline-flex ml-10 my-3">
+            <div className="justify-between w-10/12 place-self-center bg-orange-300 rounded-bl-full rounded-br-full flex shadow-lg">
+                <ul className="bg-transparent w-full flex justify-center space-x-3 items-center ml-10 my-3z ">
                     <li className="bg-transparent font-medium text-white p-2">
                         <a href="#">
                             اکسسوری
@@ -130,9 +136,8 @@ export default function Header() {
                         </ul>
                     </div>
                 </ul>
-
-
-                <ul className="bg-transparent inline-flex mr-10 my-3">
+                <div className="w-full"></div>
+                <ul className="bg-transparent w-full flex justify-center space-x-3 items-center mr-10 my-3 ">
                     <li className="bg-transparent font-medium text-white p-2">
                         <a href="#">
                             بلاگ
@@ -145,7 +150,7 @@ export default function Header() {
                     </li>
                     <li className="bg-transparent font-medium text-white p-2">
                         <a href="#">
-                            صفهه اصلی
+                            صفحه اصلی
                         </a>
                     </li>
                     <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" className="text-white " type="button">

@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 export default function MagazineCard({ image, label, title, author, excerpt, link }) {
     return (
-      <div className="bg-white rounded-2xl shadow  border border-gray-200 relative group w-full">
+      <div className="bg-white rounded-2xl shadow  border border-gray-200 relative group w-72">
         <div className="w-full mb-3 py-2 flex items-center justify-center">
-            <span className="w-64 bg-orange-300  absolute top-0 rounded-bl-full rounded-br-full py-2"></span>
+            <span className="w-40 bg-orange-300  absolute top-0 rounded-bl-full rounded-br-full py-1.5"></span>
         </div>
 
         <div className="relative w-full flex justify-center items-center">
