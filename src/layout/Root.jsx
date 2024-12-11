@@ -12,19 +12,19 @@ export default function Root() {
       image:
         "https://demo.i-wp.ir/woodland/cosmetic/wp-content/uploads/revslider/rose-slide.png",
       title: "عنوان اسلاید ۱",
-      description: "توضیحات مربوط به اسلاید اول.",
+      description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد",
       button: { text: "بیشتر بدانید", link: "#slide1" },
     },
     {
-      image: "https://via.placeholder.com/600x300?text=Slide+2",
+      image: "https://demo.i-wp.ir/woodland/cosmetic/wp-content/uploads/revslider/branname.png",
       title: "عنوان اسلاید ۲",
-      description: "توضیحات مربوط به اسلاید دوم.",
+      description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد",
       button: { text: "شروع کنید", link: "#slide2" },
     },
     {
-      image: "https://via.placeholder.com/600x300?text=Slide+3",
+      image: "https://demo.i-wp.ir/woodland/cosmetic/wp-content/uploads/revslider/ladies.png",
       title: "عنوان اسلاید ۳",
-      description: "توضیحات مربوط به اسلاید سوم.",
+      description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد",
       button: { text: "تماس با ما", link: "#slide3" },
     },
   ];
@@ -109,13 +109,15 @@ export default function Root() {
   ];
 
   return (
-    <div className="-z-50 bg-gradient-to-br from-rose-50 w-screen p-0 m-0">
-      <Header />
-      <main className="container mx-auto">
+    <div className="-z-50 bg-gradient-to-br from-orange-50 to-white w-screen p-0 m-0">
+        <Header />
         <Slider slides={slides} />
+      <main className="w-screen flex-col items-center">
         <Category />
         <ProductCrousel products={products} itemsPerPage={3} />
-        <MagazineRow articles={articles} />
+        <div className="w-screen">
+            <MagazineRow articles={articles} />
+        </div>
       </main>
       <Footer />
     </div>
