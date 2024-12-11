@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import MagazineRow from "../components/MagazineRow";
 import ProductCrousel from "../components/ProductCrousel";
 import Slider from "../components/Slider";
+import SpeciaOffer from "../components/SpecialOffer";
 
 export default function Root() {
   const slides = [
@@ -114,6 +115,7 @@ export default function Root() {
         <Slider slides={slides} />
       <main className="w-screen flex-col items-center">
         <Category />
+        <SpeciaOffer />
         <ProductCrousel products={products} itemsPerPage={3} />
         <div className="w-screen">
             <MagazineRow articles={articles} />
