@@ -2,7 +2,7 @@ export default function Header() {
 
     return (
         <header className="bg-transparent relative mb-10">
-            <div className="bg-transparent w-full flex justify-between p-10 rounded">
+            <div className="bg-transparent w-full flex justify-between px-10 pt-10 pb-3 rounded">
                 <ul className="bg-transparent inline-flex">
                     <li className="bg-transparent font-bold text-black p-2"><a href="#">فروشگاه</a></li>
                     <li className="bg-transparent text-black p-2">|</li>
